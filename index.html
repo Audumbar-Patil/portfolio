@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .navbar.fixed-top {
+            transition: top 0.3s;
+        }
+        header h1{
+            font-size: 60px;
+        }
+        .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        background-color: black;
+        color: white;
+    }
+    .social-links {
+            margin-top: 15px;
+        }
+    
+        .social-icon {
+            font-size: 40px;
+            margin: 15px;
+            color: #333;
+            transition: color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+    
+        /* Hover Effects */
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+    
+        .social-icon:nth-child(1):hover { color: #0077b5; } 
+        .social-icon:nth-child(2):hover { color: #000; }   
+        .social-icon:nth-child(3):hover { color: #d44638; } 
+        .social-icon:nth-child(4):hover { color: #34a853; } 
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My_Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5" style="background: url('./assets/bg.jpg');" style="padding-top: 20px;">
+        <h1 class="py-4">Audumbar Patil</h1>
+        <p>Full Stack Developer | DevOps Engineer | Security Analyst </p>
+    </header>
+
+    <section id="about" class="container my-5 py-5 text-center">
+        
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h2>About Me</h2>
+                <p class="container fs-5">
+                    I’m a software developer passionate about building seamless, user-friendly, and efficient digital experiences.
+                    Whether it’s crafting dynamic web applications, developing AI-powered solutions, or architecting scalable cloud infrastructures,
+                    I thrive on turning ideas into reality. With expertise in React.js, Vanilla JavaScript, Flask, FastAPI, and Django,
+                    I create full-stack applications that are both robust and responsive.
+                    My work extends to DevOps, where I utilize AWS, Docker, Kubernetes, and CI/CD pipelines to ensure scalable and efficient deployments.
+                    Security is a key focus in all my projects, where I integrate authentication systems, API security, and best practices to build reliable and secure applications.
+                    I enjoy solving complex problems, optimizing performance, and exploring new technologies to create impactful digital solutions.</p>
+    
+                <div class="bg-light py-4 rounded shadow-sm">
+                    <h4 class="text-primary py-3">🔹 Full-Stack Development</h4>
+                    <p>
+                        I specialize in React.js, Vanilla JavaScript, HTML, and CSS for intuitive and interactive frontends.  
+                        On the backend, I work with Flask, FastAPI, and Django, integrating databases, APIs, and cloud solutions for scalable applications.
+                    </p>
+                </div>
+    
+                <div class="mt-4 bg-light p-4 rounded shadow-sm">
+                    <h4 class="text-success">🤖 DevOps</h4>
+                    <p>
+                        I have worked with AWS, Docker, Kubernetes, and CI/CD pipelines to automate deployments,
+                        manage scalable cloud infrastructures, and optimize application performance.
+                        I have implemented GitHub Actions and Jenkins for continuous integration and deployment, 
+                        ensuring smooth development workflows. ⚙️☁️ </p>
+                </div>
+
+                <div class="mt-4 bg-light p-4 rounded shadow-sm">
+                    <h4 class="text-danger">🔒 Cyber Security</h4>
+                    <p>
+                        I have identified and reported XSS and SQL injection vulnerabilities on bug bounty platforms,
+                        strengthening application security. I have implemented API security, authentication systems using OAuth and JWT,
+                        and secured cloud environments with AWS IAM, WAF, and encryption protocols. 🔒🛡️</p>
+                </div>
+    
+                <p class="mt-4 fst-italic text-secondary">
+                    Always learning. Always building. Always innovating. 🚀  
+                    Let’s create something amazing together!
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="work" class="container my-5">
+        <h2>My Work</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://github.com/Audumbar-Patil/webvulnerabilityscanner" target="_blank" class="text-decoration-none">
+                    <div class="card">
+                        <img src="./assets/w1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">AI Web Vulnerability Scanner</h5>
+                            <p class="card-text">
+                                Automated Vulnerability Scanning (Detects SQL Injection, XSS, CSRF, Open Ports) <br>
+                                AI-Based Threat Detection (Uses ML models for anomaly detection) <br>
+                                Real-Time Alerts & Reports (Get email notifications for security threats)
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://github.com/Audumbar-Patil/webvulnerabilityscanner" target="_blank" class="text-decoration-none">
+                    <div class="card">
+                        <img src="./assets/w2.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Image Recognition CNN</h5>
+                            <p class="card-text">
+                                Backend: Flask (Python) <br>
+                                Machine Learning: CNN Models (ResNet, MobileNet, YOLO) <br>
+                                Real-time Image Upload & Prediction <br>
+                                Agriculture: Detect plant species & diseases.<br>
+                                Healthcare: Identify medical conditions in X-rays & scans.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://github.com/Audumbar-Patil/bharatsagastudioslandingpage" target="_blank" class="text-decoration-none">
+                    <div class="card">
+                        <img src="./assets/w3.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Landing Page - Bharat Saga Studios</h5>
+                            <p class="card-text">
+                                A hero section with branding and CTA  <br>
+                                Fully responsive design 📱💻  <br>
+                                An about section highlighting the studio's mission  <br>
+                                A team section introducing key members <br>
+                                A portfolio displaying past projects <br>
+                                Smooth animations & interactive UI <br>
+                                Dynamic video & team member integration from Flask backend 
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://github.com/Audumbar-Patil/bharatsagastudioslandingpage" target="_blank" class="text-decoration-none">
+                    <div class="card">
+                        <img src="./assets/w4.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning Study Website</h5>
+                            <p class="card-text">
+                                User-friendly Interface: Built using HTML, CSS, and Vanilla JavaScript, offering a responsive and interactive experience.<br>
+                                Backend Logic: Flask handles API requests, manages business logic, and performs CRUD operations on the database.<br>
+                                Asynchronous Operations: Optimized API calls for better performance and user experience.
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://github.com/Audumbar-Patil/SaaSadmindashboard" target="_blank" class="text-decoration-none">
+                    <div class="card">
+                        <img src="./assets/w5.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">SaaS Admin Dashboard</h5>
+                            <p class="card-text">
+                                Interactive charts & analytics 📈 <br>
+                                Building this project helped me dive deeper
+                                into full-stack SaaS development—handling everything from UI/UX to backend logic and database design.<br>
+                                Lightning-fast API with Flask & FastAPI
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5 text-center">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/audumbarpatil" target="_blank" class="social-icon" title="LinkedIn: Audumbar Patil">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        
+            <a href="https://github.com/Audumbar-Patil" target="_blank" class="social-icon" title="GitHub: Audumbar-Patil">
+                <i class="fab fa-github"></i>
+            </a>
+        
+            <a href="mailto:patil.audumbar.santosh@gmail.com" class="social-icon" title="Email: patil.audumbar.santosh@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        
+            <a href="tel:+917276793414" class="social-icon" title="Call: +91 7276793414">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        
+    </section>
+    
+
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Message sent successfully!");
+        });
+
+        window.onscroll = function() {
+            let navbar = document.querySelector(".navbar");
+            if (window.pageYOffset > 100) {
+                navbar.style.top = "0";
+            } else {
+                navbar.style.top = "-60px";
+            }
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
